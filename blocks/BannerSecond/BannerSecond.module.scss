@@ -1,0 +1,26 @@
+.mainDiv{
+  margin: 10px 0px;
+}
+.heroContentWrapper {
+    display: flex;
+    z-index: 10;
+    height: 250px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/004/299/806/small/online-shopping-on-phone-buy-sell-business-digital-web-banner-application-money-advertising-payment-ecommerce-illustration-search-vector.jpg");
+  }
+  
+  .heroContent {
+    line-height: 1.6;
+  }
+  
+  .transparent {
+    background-color: transparent;
+  }
+  
+  .textStandard {
+    color: black;
+  }
+  

@@ -1,0 +1,312 @@
+/*in large screen*/
+.topNav{
+    // position: relative;
+    background-color: #ff5776;
+    padding: 2px 10px;
+}
+.navMargin {
+  margin-bottom: 100px;
+}
+
+@media (max-width: 1000px) {
+  .navMargin {
+    margin-bottom: 57px;
+  }
+}
+
+.icon {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    color: #fff;
+    background-color: #ff5776;
+    border-radius: 50%;
+    width: 28px; 
+    height: 28px; 
+    font-size: 25px; 
+    text-align: center; 
+}
+.alertTxt{
+    font-size: 12px;
+    color: #000;
+}
+.navbarWrapper{
+    background-color: #fff;
+}
+.headerWrapper{
+    padding-inline: 50px;
+}
+.logo{
+    width: 100px;
+}
+.navList{
+        a{
+            font-size: 12px;
+        }
+}
+.rightIcon{
+    font-size: 17px;
+}
+.cartIcon{
+    font-size: 22px;
+}
+
+
+.menuItem {
+    position: relative;
+    display: inline-block;
+  
+    &.parent {
+      cursor: pointer;
+  
+      &:hover .dropdown {
+        display: block;
+        animation: slideDown 0.9s ease forwards;
+      }
+    }
+  
+    .navlinkTop {
+      text-decoration: none;
+      color: #000;
+      padding: 10px;
+      display: block;
+      
+      &:hover {
+        color: #000;
+      }
+    }
+
+    .navlink {
+        text-decoration: none;
+        color: var(--COLOR-NAV-TEXT);
+        padding: 10px;
+        display: block;
+        
+        &:hover {
+          color: #000;
+        }
+      }
+  
+    .dropdown {
+      display: none; 
+      position: absolute;
+      top: 100%; 
+      left: 50%; 
+      transform: translateX(-50%); 
+      border: 1px solid #fff;
+      z-index: 1000;
+      width: 150px;
+      background-color: #fff;
+  
+      &__wrapper {
+        padding: 10px 0;
+      }
+  
+      &__inner {
+        display: flex;
+        flex-direction: column;
+        padding: 10px; 
+        .child {
+          padding: 8px 12px;
+          text-decoration: none;
+          color: #000;
+          transition: background-color 0.2s;
+  
+          &:hover {
+            background-color: #000;
+          }
+        }
+      }
+    }
+  }
+  
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .navlinkTop:hover::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .navlinkTop::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease-in-out;
+  }
+
+
+  .rightIcon {
+    font-size: 18px;
+    color: #000;
+    cursor: pointer;
+  
+    &:hover {
+      color: #000; /* Change color on hover */
+    }
+  }
+  
+  .cartIcon {
+    font-size: 24px;
+    color: #000;
+    cursor: pointer;
+  
+    &:hover {
+      color: #000; /* Change color on hover */
+    }
+  }
+  
+  .dropdownSearch {
+    position: absolute;
+    top: 0px; /* Adjust this according to your layout */
+    right: 0;
+    width: 100%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    background-color: #fff;
+    display: flex;
+    animation: slideDown 0.9s ease forwards;
+  
+    .searchInput {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #fff;
+      background-color: #fff;
+      border-radius: 4px;
+    }
+
+    .searchInput:focus{
+        border: 0;
+    }
+
+    .closeIcon {
+        font-size: 25px;
+        color: #000;
+        cursor: pointer;
+        padding: 5px;
+    
+        &:hover {
+          color: #000; /* Red color on hover */
+        }
+      }
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+  
+
+
+  
+
+// header in small screen
+
+.logoSmScreen{
+    width: 100px;
+}
+.iconSmScreen{
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.navbarTogglerSm {
+    border: none; // Remove border
+    background: transparent; // Optional: make background transparent
+  }
+.personIconSm{
+    font-size: 25px;
+}
+
+// styles/DrawerMenu.module.scss
+.drawerMenu {
+    .menuItemSm {
+      position: relative;
+      margin: 10px 0;
+      width: 100%;
+  
+      .sliderow {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 1.2em;
+        width: 100%;
+        padding: 10px;
+  
+        &:focus {
+          outline: none;
+        }
+      }
+  
+      .subMenu {
+        margin-top: 5px;
+        a {
+          display: block;
+          padding: 5px 0;
+          color: #333;
+          text-decoration: none;
+  
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  
+    .chevron {
+      margin-left: 10px;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+@media (max-width: 1000px) {
+    .lgScreen {
+      display: none; /* or any other display property */
+    }
+  
+    .smScreen {
+      display: block;
+    }
+  }
+  
+  @media (min-width: 1000px) {
+    .smScreen {
+      display: none;
+    }
+  
+    .lgScreen {
+      display: block; /* or any other display property */
+    }
+  }
+

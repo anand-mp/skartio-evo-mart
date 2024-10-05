@@ -1,0 +1,60 @@
+.mainDiv {
+  width: 100%;
+  background-color: #6666cc;
+
+}
+.headingTxt {
+  color: #ea89bf;
+  text-align: center;
+}
+.paraDiv {
+  display: flex;
+  justify-content: center;
+
+  .paraTxt {
+    color: #fff;
+    text-align: center;
+    width: 60%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}
+
+.inputDiv {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  .inputField {
+    width: 50%;
+    padding: 10px 10px;
+    border: none;
+    background-color: #fff;
+    color: #959393;
+    outline: none;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}
+.btnDiv {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+
+  .btnField {
+    width: 35%;
+    padding: 10px 5px;
+    border: none;
+    background-color: #ea89bf;
+    color: #fff;
+
+    &:hover{
+      background-color: #e67cb6;
+    }
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,100 @@
+.mainDiv {
+  background-color: #2934280d;
+  display: flex;
+  justify-content: center;
+}
+
+.secondDiv {
+  width: 40%;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 0 20px; // Add padding to prevent input from touching the edges
+  }
+}
+
+// styles/Card.module.scss
+.card {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  background-color: #fff;
+  padding: 40px 0px;
+  margin: 70px 0;
+  border: none;
+}
+
+.cardBody {
+  padding: 1rem;
+  text-align: center;
+
+  .loginTxt {
+    font-size: 18px;
+  }
+}
+
+.inputDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+  .inputField {
+    width: 80%;
+    padding: 7px 10px;
+    border: 1px solid #ccc; // Ensure border is always present
+    border-radius: 4px; // Add slight rounding for consistency
+    background-color: #fff;
+    outline: none;
+    color: #8f8d8d;
+
+
+
+    &::placeholder {
+      color: #8f8d8d;
+      font-size: 14px;
+    }
+  }
+
+  .signInBtn {
+    padding: 7px 10px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #000;
+    width: 80%;
+    text-transform: uppercase;
+    border: 3px solid #fff;
+
+
+    &:hover {
+      background-color: #fff;
+      color: #000;
+      border: 3px solid #000;
+    }
+  }
+
+  .hoverLine {
+    position: relative;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+    color: #000;
+
+    &:hover::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 100%;
+      height: 2px;
+      background-color: #000;
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+
+    &:hover::after {
+      transform: scaleX(1);
+    }
+  }
+}

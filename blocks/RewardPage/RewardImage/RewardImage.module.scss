@@ -1,0 +1,64 @@
+// components/ImageOverlay.module.scss
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  
+    .image {
+      width: 100%;
+      height: auto; // Maintain aspect ratio
+    }
+  }
+  
+
+  /* Centered text */
+  .centered {
+    position: absolute;
+    bottom:10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 10px;
+  }
+  
+  .btn1, .btn2 {
+    padding: 10px 30px;
+    border-radius: 0;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease; // Smooth transition
+    border: none;
+    &:hover {
+      cursor: pointer; // Change cursor to pointer on hover
+    }
+  }
+  
+  .btn1 {
+    background-color: #ea89bf;
+  
+    &:active {
+      background-color: #ea89bf; // Maintain background color on click
+      color: #fff; // Maintain text color on click
+    }
+  }
+  
+  .btn2 {
+    background-color: #ec7637;
+  
+    &:active {
+      background-color: #ec7637; // Maintain background color on click
+      color: #fff; // Maintain text color on click
+    }
+  }
+  
+  // Make buttons responsive
+  @media (max-width: 600px) {
+    .btn1, .btn2 {
+      width: 100%; // Full width on small screens
+      font-size: 12px; // Optional: Adjust font size for smaller screens
+      padding: 5px 15px;
+
+    }
+  }

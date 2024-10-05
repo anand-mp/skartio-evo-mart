@@ -1,0 +1,25 @@
+.mainDiv{
+  margin: 0px 0px;
+}
+.heroContentWrapper {
+    display: flex;
+    z-index: 10;
+    height: 250px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .heroContent {
+    line-height: 1.6;
+  }
+  
+  .transparent {
+    background-color: transparent;
+  }
+  
+  .textStandard {
+    color: black;
+  }
+  
